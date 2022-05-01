@@ -17,7 +17,7 @@ class TPQueue {
         item->next = nullptr;
         return item;
     }
- 
+
  public:
     void push(T item) {
         count++;
