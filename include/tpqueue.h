@@ -17,6 +17,7 @@ class TPQueue {
         item->next = nullptr;
         return item;
     }
+ 
  public:
     void push(T item) {
         count++;
@@ -24,8 +25,7 @@ class TPQueue {
             ITEM* temp = create(item);
             temp->next = head;
             head = temp;
-        }
-        else {
+        } else {
             head = create(item);
         }
         CheckThisOut();
